@@ -1,0 +1,215 @@
+{
+	"info": {
+		"_postman_id": "464d57ff-0765-498f-abdc-bed20d2a47ff",
+		"name": "Flip",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1184625"
+	},
+	"item": [
+		{
+			"name": "Auth Flip",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"fafa\",\n    \"password\":\"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "balance_read",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ3b254IiwiZXhwIjoxNzE0Mzc1OTE5LCJpYXQiOjE3MTQzNTc5MTl9.COF6eaKxf7aUNBE4OTMUeDsnCLYClOaRfqYFVMvFxiPUHP1PvcTtfojdnC8kf5scyciiwT3bBkLBiwODWz47kw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9999/v1/balance_read",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"v1",
+						"balance_read"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top ten users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmYWZhIiwiZXhwIjoxNzE0Mzc4MDAzLCJpYXQiOjE3MTQzNjAwMDN9.9a0_AmKRgLj5j5pU9xkiqebbXT8f018OJJBlI6B1Yji4XYHPMXbJgoUr7_fQhhiONqlqJr_GiJgdH1pOf2FS6w",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9999/v1/top_users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"v1",
+						"top_users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top ten transaction",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmYWZhIiwiZXhwIjoxNzE0Mzc4MDAzLCJpYXQiOjE3MTQzNjAwMDN9.9a0_AmKRgLj5j5pU9xkiqebbXT8f018OJJBlI6B1Yji4XYHPMXbJgoUr7_fQhhiONqlqJr_GiJgdH1pOf2FS6w",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9999/v1/top_transactions_per_user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"v1",
+						"top_transactions_per_user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"iwan abdur\",\n    \"username\":\"fafa\",\n    \"phone\":\"081902512555\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/v1/create_user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"v1",
+						"create_user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transfer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmYWZhIiwiZXhwIjoxNzE0Mzc4MDAzLCJpYXQiOjE3MTQzNjAwMDN9.9a0_AmKRgLj5j5pU9xkiqebbXT8f018OJJBlI6B1Yji4XYHPMXbJgoUr7_fQhhiONqlqJr_GiJgdH1pOf2FS6w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"to_username\":\"andi\",\n    \"amount\":97000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/v1/transfer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"v1",
+						"transfer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "topup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmYWZhIiwiZXhwIjoxNzE0Mzc4MDAzLCJpYXQiOjE3MTQzNjAwMDN9.9a0_AmKRgLj5j5pU9xkiqebbXT8f018OJJBlI6B1Yji4XYHPMXbJgoUr7_fQhhiONqlqJr_GiJgdH1pOf2FS6w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\":720000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/v1/balance_topup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"v1",
+						"balance_topup"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
