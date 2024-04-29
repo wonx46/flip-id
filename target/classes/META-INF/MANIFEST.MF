@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: iwan
+Build-Jdk: 21.0.2
+Implementation-Title: iwan-test
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.flip.iwan
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/iwan-test
+Created-By: Maven Integration for Eclipse
+
